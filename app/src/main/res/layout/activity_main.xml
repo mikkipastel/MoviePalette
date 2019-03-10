@@ -18,4 +18,60 @@
         fresco:placeholderImageScaleType="centerCrop"
         fresco:fadeDuration="1000"/>
 
+    <TextView
+        android:id="@+id/textviewDarkMutedSwatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="darkMutedSwatch"/>
+
+    <TextView
+        android:id="@+id/textviewDarkVibrantSwatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="darkVibrantSwatch"/>
+
+    <TextView
+        android:id="@+id/textviewDominantSwatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="dominantSwatch"/>
+
+    <TextView
+        android:id="@+id/textviewLightMutedSwatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="lightMutedSwatch"/>
+
+    <TextView
+        android:id="@+id/textviewLightVibrantSwatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="lightVibrantSwatch"/>
+
+    <TextView
+        android:id="@+id/textviewMutedSwatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="mutedSwatch"/>
+
+    <TextView
+        android:id="@+id/textviewVibrantSwatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="vibrantSwatch"/>
+
 </LinearLayout>
