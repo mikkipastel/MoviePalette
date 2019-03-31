@@ -5,6 +5,7 @@ import android.graphics.BitmapFactory
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.graphics.Palette
+import android.support.v7.widget.GridLayoutManager
 import android.view.View
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -27,6 +28,12 @@ class MainActivity : AppCompatActivity() {
             createPaletteAsync(getBitmapFromUrl(url))
         }
 
+        recyclerViewSwatch.layoutManager = GridLayoutManager(
+            this,
+            16,
+            GridLayoutManager.VERTICAL,
+            false
+        )
     }
 
     private fun getBitmapFromUrl(src: String): Bitmap {
@@ -48,6 +55,8 @@ class MainActivity : AppCompatActivity() {
             setTextViewWithPalette(textviewLightVibrantSwatch, palette?.lightVibrantSwatch)
             setTextViewWithPalette(textviewMutedSwatch, palette?.mutedSwatch)
             setTextViewWithPalette(textviewVibrantSwatch, palette?.vibrantSwatch)
+
+            recyclerViewSwatch.adapter = SwatchAdapter(palette?.swatches!!)
         }
     }
 
